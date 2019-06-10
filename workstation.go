@@ -405,9 +405,9 @@ func (d *Driver) Start() error {
 		guestCompatLink = "/Home"
 	case "windows":
 		shareName = "Users"
-		shareDir = `C:\Users\`
-		guestFolder = "/Users"
-		guestCompatLink = "/c/Users"
+		shareDir = `F:\Shared\`
+		guestFolder = "/Shared"
+		guestCompatLink = "/f/Shared"
 	}
 
 	if shareDir != "" {
@@ -461,9 +461,9 @@ func (d *Driver) Restart() error {
 		guestCompatLink = "/Home"
 	case "windows":
 		shareName = "Users"
-		shareDir = `C:\Users\`
-		guestFolder = "/Users"
-		guestCompatLink = "/c/Users"
+		shareDir = `F:/Shared`
+		guestFolder = "/Shared"
+		guestCompatLink = "/f/Shared"
 	}
 
 	if shareDir != "" {
