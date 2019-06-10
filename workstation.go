@@ -360,10 +360,10 @@ func (d *Driver) Create() error {
 		guestFolder = "/Users"
 		guestCompatLink = "/Home"
 	case "windows":
-		shareName = "Users"
-		shareDir = `C:\Users\`
-		guestFolder = "/Users"
-		guestCompatLink = "/c/Users"
+		shareName = "Shared"
+		shareDir = `F:\Shared\`
+		guestFolder = "/Shared"
+		guestCompatLink = "/f/Shared"
 	}
 
 	if shareDir != "" {
